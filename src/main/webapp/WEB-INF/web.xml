@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>HelloServlets</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>DirServlet</servlet-name>
+    <servlet-class>com.revature.direct_servlet.DirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DirServlet</servlet-name>
+    <url-pattern>/dirservlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>IndirectServlet</display-name>
+    <servlet-name>IndirectServlet</servlet-name>
+    <servlet-class>indirect_servlet.IndirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>IndirectServlet</servlet-name>
+    <url-pattern>/IndirectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionServlet</display-name>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>session_servlet.SessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/SessionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HelperSessionServlet</display-name>
+    <servlet-name>HelperSessionServlet</servlet-name>
+    <servlet-class>com.revature.session_servlet.HelperSessionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelperSessionServlet</servlet-name>
+    <url-pattern>/HelperSessionServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
